@@ -53,7 +53,7 @@ app.post("/post", async(req,res)=>{
 app.listen(Port,"192.168.8.104",async ()=>{
     try{
         mongoose.set("strictQuery", false);
-        await mongoose.connect("mongodb+srv://mamex:jaksonfafa@cluster0.z65xuf6.mongodb.net/?retryWrites=true&w=majority");
+        await mongoose.connect("mongodb+srv://yourname:yourpassword@cluster0.z65xuf6.mongodb.net/?retryWrites=true&w=majority");
         }catch (e){
         console.log(e)
     }
